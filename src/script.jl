@@ -3,6 +3,7 @@
 #------------------------------------------------------------------------------
 # ATTENTION: make sure that your present working directory pwd() is set to the folder
 # containing script.jl and BASEforHANK.jl. Otherwise adjust the load path.
+cd("./src")
 
 # pre-process user inputs for model setup
 include("3_NumericalBasics/PreprocessInputs.jl")

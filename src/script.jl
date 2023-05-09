@@ -89,9 +89,7 @@ select_variables = [:Igrowth, :Cgrowth, :wgrowth]
 model_names = ["HANC"] # Displayed names of models to be compared
 
 # enter here the models, as tupel of tupels (sr, lr, e_set, m_par), to be compared
-models_tupel = (
-        (sr_mc, lr_mc, e_set, m_par_mc),
-        )
+models_tupel = ((sr_full, lr_full, e_set, m_par),) #((sr_mc, lr_mc, e_set, m_par_mc),)
 
 timeline = collect(1954.75:0.25:2019.75)
 select_vd_horizons = [4 16 100] # horizons for variance decompositions

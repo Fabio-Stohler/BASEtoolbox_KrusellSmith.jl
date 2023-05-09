@@ -106,7 +106,7 @@ nice_s_names = ["TFP"]
 IRFs, VDs, SHOCKs = compute_irfs_vardecomp(models_tupel, select_variables)
 
 # display IRFs and export as pdf
-IRFs_plot = plot_irfs(IRFs, SHOCKs, select_variables, nice_var_names, nice_s_names, 40, model_names, 4; savepdf=true) 
+IRFs_plot = plot_irfs(IRFs, SHOCKs, select_variables, nice_var_names, nice_s_names, 40, model_names, 2; savepdf=true) 
 
 # export Variance Decompositions as DataFrames and Plot using VegaLite
 DF_V_Decomp = plot_vardecomp(VDs, select_vd_horizons, model_names, SHOCKs,
